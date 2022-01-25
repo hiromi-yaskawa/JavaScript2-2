@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href=" ">
+    <title>JavaScript 2-2</title>
+</head>
+
+<body>
+    <input type="button" value="ボタン" onclick="changeBtn();">
+    <p id="p1">ボタンが押されると表示非表示が切り替わります</p>
+    <script>
+        //初期表示は非表示
+        document.getElementById("p1").style.display = "none";
+
+        function changeBtn() {
+            let p1 = document.getElementById("p1");
+            if (p1.style.display == "block") {
+                //noneで非表示
+                p1.style.display = "none";
+            } else {
+                //blockで表示
+                p1.style.display = "block";
+                console.log(p1);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
