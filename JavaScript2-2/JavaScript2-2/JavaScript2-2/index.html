@@ -13,8 +13,7 @@
     <input type="button" value="ボタン" onclick="changeBtn();">
     <p id="p1">ボタンが押されると表示非表示が切り替わります</p>
     <script>
-        let p1 = document.querySelector("#p1")
-            //初期表示は非表示
+        //初期表示は非表示
         document.getElementById("p1").style.display = "none";
 
         function changeBtn() {
@@ -25,7 +24,7 @@
             } else {
                 //blockで表示
                 p1.style.display = "block";
-                console.log('ボタンが押されると表示非表示が切り替わります');
+                console.log(p1);
             }
         }
     </script>
